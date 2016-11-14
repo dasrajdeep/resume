@@ -1,0 +1,129 @@
+\documentclass[margin,line]{res}
+
+
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth=6.0in
+\itemsep=0in
+\parsep=0in
+% if using pdflatex:
+%\setlength{\pdfpagewidth}{\paperwidth}
+%\setlength{\pdfpageheight}{\paperheight} 
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+
+\begin{document}
+
+\name{Rajdeep Das \vspace*{.1in}}
+
+\begin{resume}
+\section{\sc Personal Information}
+
+Research Fellow            {\hfill {\it mobile:}  (+91) 7754915769} \\       
+  Microsoft Research India    {\hfill{\it webpage:} http://raj.d33p.in}
+    \\              
+Bangalore, India
+    {\hfill {\it e-mail:}  das.rajdeep97@gmail.com}\\     
+
+
+
+\section{\sc Research Interests}
+Computer Networking, Distributed Systems, Intelligent Tutoring Systems, Cloud Computing
+
+\section{\sc Education}
+
+{\bf M.Tech / Computer Science and Engineering} \\
+{\em Indian Institute of Technology Kanpur }{\hfill}2013 - 2015 \\
+\vspace*{-.1in}
+CGPA: 8.29/10
+\vspace*{.05in}
+
+{\bf B.Tech / Information Technology} \\
+{\em West Bengal University of Technology }{\hfill}2009 - 2013 \\
+\vspace*{-.1in}
+CGPA: 8.25/10
+\vspace*{.05in}
+
+{\bf High School / Indian School Certificate} \\
+{\em Council for the Indian School Certificate Examinations }{\hfill}2009 \\
+\vspace*{-.1in}
+Result: 84\%
+\vspace*{.05in}
+
+\section{\sc Publications}
+{\em Junchen Jiang, Rajdeep Das, Ganesh Ananthanarayanan, Philip A. Chou, Venkata Padmanabhan, Vyas Sekar, Esbjorn Dominique, Marcin Goliszewski, Dalibor Kukoleca, Renat Vafin, Hui Zhang} - 
+{\bf VIA: Improving Internet Telephony Call Quality Using Predictive Relay Selection}, ACM SIGCOMM 2016
+
+\section{\sc Teaching Experience}
+{\bf Indian Institute of Technology Kanpur} / Teaching Assistant {\hfill}{\em Kanpur}, 2013 - 2014 \\
+Primary responsibility initially was to help students with solving programming problems and grading. Also helped students with weak concepts by tutoring them.
+
+\section{\sc Professional Experience}
+{\bf Microsoft Research India} / Research Fellow {\hfill}Bangalore, August 2015 - PRESENT \\
+Worked on improving the quality of real-time streaming applications, with the PinDrop umbrella project under the Mobility, Networks and Systems research group. The following are the projects that I worked on: \\
+{\em Internet Performance Map} - A performance map of the internet which could be used by real-time streaming applications like Skype to predict the quality of future calls. Leveraged large amounts of telemetry data from Skype and Bing to concoct a method of using predictive relaying to improve call quality. The idea involved routing calls through managed networks to avoid the downsides of the public internet, while also operating within a budget. \\
+{\em Kwikr} - Fast bandwidth adaptation using WiFi hints. We developed a suite of detectors for congestion, handoffs and link-strength-change at the WiFi access point. The congestion detector involved our novel ping-pair technique which can be used to estimate the queueing delay at the wireless access point. We integrated Kwikr into Skype for Android and is now in production, affecting millions of users globally. \\
+{\em Multipath in Real-Time Streaming} - Using multiple paths over different network interfaces or different WAN paths to improve performance of real-time streaming applications. Currently analysing the benefits of using multipath to reduce call drop rates in Skype.
+
+{\bf PriceWaterhouseCoopers} / Intern {\hfill} Kolkata, June 2012 - August 2012 \\
+Primary responsibility involved assessing web applications for security vulnerabilities and recommending fixes for them. The security vulnerabilities that I tested for included attacks such as cross-site-scripting, injection, session hijacking, sensitive data leakage, cross-site-request-forgery, insecure direct object references and unvalidated forwards/redirects. 
+
+\section{\sc Master's Thesis}
+{\bf A Tutoring System for Introductory Programming} \\
+A computer-aided tutoring system for the introductory programming, now known as Prutor. Prutor is a cloud based system with a web interface that students can use to solve programming problems. Instructors also use Prutor to manage courses and evaluate student performance. Prutor records the evolution of student programs, which enables instructors to analyze the students’ methodology while solving programming problems. This feature also helps detect plagiarism by observing the speed with which students wrote programs and the evolution of the programs. Prutor is integrated with real-time feedback tools which help students rectify syntactic and semantic errors without intervention from tutors, teaching assistants, etc. Prutor is used in the compulsory ESC101 course at IIT Kanpur and is now also used in other universities such as IIT Bombay and IIT Goa.
+
+\section{\sc Key Academic Projects}
+
+{\bf Handwritten Alphanumeric Character Recognition} \\
+{\em For partial fulfillment of a Machine Learning course} \\
+Project involved recognizing handwritten characters. We had a large dataset of tagged handwritten characters which was used to train and test. We used features such as zoning, number of intersections with horizontal/vertical lines, stroke angles, contours and straightness index. The classifiers used included Neural Networks, SVMs and Random Forests.
+
+{\bf Similar Category Differentiation of Objects} \\
+{\em For partial fulfillment of a Computer Vision course} \\
+Project involved differentiating between similar categories of images such as flowers and birds. Features used include dense SIFT with Fisher kernel for each individual colour channel. The features were tested on classifiers AdaBoost and SVM.
+
+{\bf DoS/DDoS Mitigation System for Web Applications} \\
+{\em For partial fulfillment of a Software Architecture course} \\
+Project involved architecting and implementing a solution to mitigate DoS/DDoS attacks up to the transport layer. The solution involved rate limiting and limiting the number of concurrent connections using Firewall and Reverse Proxy. Improved the architecture with respect to  availability of the system by usage of application server clusters and a load balancer.
+
+{\bf Digital Image Compression using Haar Wavelet Transform} \\
+{\em BTech Project} \\
+Project involved compressing images by first encoding them using the Haar wavelet transform, followed by compressing them. A file format for storing the encoded images was developed. 
+
+\section{\sc Awards \& Achievements}
+
+{\bf Best Software Award} {\hfill} 2015 \\
+{\em Indian Institute of Technology Kanpur} \\
+\\
+{\bf School Topper} {\hfill} 2003, 2007, 2008 \\
+{\em National Science Olympiad} \\
+
+\section{\sc Co-Curricular Activities}
+
+{\bf Google Dev Fest} / Runner Up {\hfill} September 2013 \\
+{\em Wish’EmAll}: Created an app that automatically wishes Facebook friends on their birthdays. \\
+\\
+{\bf Yahoo! Hack U} / Honourable Mention {\hfill} August 2013 \\
+{\em Gyaanometer}: Our hack was a user rating system for Yahoo answers, where every user would be given a rating according to her past activity. Our hack was ranked in the top 7 hacks. \\
+\\
+{\bf Microsoft Code.Fun.Do} / Participated {\hfill} January 2013 \\
+{\em Botomatic}: We created an app which would connect to Facebook on behalf of a user and chat with her friends. The app used Pandorabots AI to converse with the user’s friends.
+
+\end{resume}
+\end{document}
+
+
+
+
